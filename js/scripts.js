@@ -39,8 +39,8 @@ $('.color-on-hover').hover(
     // function(){ $(this).removeClass('colored') }
 )
 
-$("a").not(".nav-link").attr("target", "_blank");
-$("a").not(".nav-link").attr("rel", "noopener noreferrer");
+$("a").not(".navbar a").attr("target", "_blank");
+$("a").not(".navbar a").attr("rel", "noopener noreferrer");
 
 // pa
 const height = document.body.scrollHeight;
