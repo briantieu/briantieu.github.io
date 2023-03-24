@@ -14,7 +14,7 @@
 }
 
 .tag {
-  font: 12px/1.5 'PT Sans', serif;
+  font: 12px/1.5 var(--bs-body-font-family);
   background: #eee;
   border-radius: 3px 0 0 3px;
   color: #999;
