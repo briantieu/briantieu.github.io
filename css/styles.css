@@ -292,8 +292,13 @@ a {
 }
 
 a:hover {
+  color: rgba(var(--bs-primary-rgb), 0.75);
+}
+
+a.text-primary:hover {
   color: rgba(var(--bs-primary-rgb), 0.75) !important;
 }
+
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
