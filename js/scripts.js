@@ -39,5 +39,5 @@ $('.color-on-hover').hover(
     // function(){ $(this).removeClass('colored') }
 )
 
-$("a").attr("target", "_blank");
-$("a").attr("rel", "noopener noreferrer");
+$("a").not(".nav-link").attr("target", "_blank");
+$("a").not(".nav-link").attr("rel", "noopener noreferrer");
