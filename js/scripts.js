@@ -42,11 +42,19 @@ $('.color-on-hover').hover(
 $("a").not(".navbar a").attr("target", "_blank");
 $("a").not(".navbar a").attr("rel", "noopener noreferrer");
 
+function randomFromInterval(min, max) { // min and max included
+    return Math.random() * (max - min + 1) + min;
+}
+
+const randGreen = randomFromInterval(80, 150);
+const randBlue = randomFromInterval(100, 180);
+
 // pa
 const height = document.body.scrollHeight;
 setInterval(() => {
     const curr = window.pageYOffset;
     const newVal = (curr / height) * 150;
-    $(":root").get(0).style.setProperty("--bs-primary-rgb", newVal + ", 106, 177");
+
+    $(":root").get(0).style.setProperty("--bs-primary-rgb", newVal + ", " + randGreen + ", " + randBlue); // 106, 177
 
 }, 50);
