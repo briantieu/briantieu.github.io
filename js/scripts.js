@@ -38,3 +38,6 @@ $('.color-on-hover').hover(
     function(){ $(this).addClass('colored') },
     // function(){ $(this).removeClass('colored') }
 )
+
+$("a").attr("target", "_blank");
+$("a").attr("rel", "noopener noreferrer");
