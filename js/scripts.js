@@ -41,3 +41,13 @@ $('.color-on-hover').hover(
 
 $("a").not(".nav-link").attr("target", "_blank");
 $("a").not(".nav-link").attr("rel", "noopener noreferrer");
+$(":root").get(0).style.setProperty("--bs-primary-rgb", "0, 0, 0");
+
+// pa
+const height = document.body.scrollHeight;
+setInterval(() => {
+    const curr = window.pageYOffset;
+    const newVal = 17 + (curr / height) * 150;
+    $(":root").get(0).style.setProperty("--bs-primary-rgb", newVal + ", 106, 177");
+
+}, 50);
