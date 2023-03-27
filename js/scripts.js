@@ -42,6 +42,8 @@ $('.color-on-hover').hover(
 $("a").not(".navbar a").attr("target", "_blank");
 $("a").not(".navbar a").attr("rel", "noopener noreferrer");
 
+$(".project-image-vert img, .project-image-horiz img").wrap("<div class='image-box rounded'></div>");
+
 function randomFromInterval(min, max) { // min and max included
     return Math.random() * (max - min + 1) + min;
 }
@@ -49,7 +51,7 @@ function randomFromInterval(min, max) { // min and max included
 const randGreen = randomFromInterval(80, 150);
 const randBlue = randomFromInterval(100, 180);
 
-// pa
+// change color with scroll
 const height = document.body.scrollHeight;
 setInterval(() => {
     const curr = window.pageYOffset;
@@ -58,3 +60,9 @@ setInterval(() => {
     $(":root").get(0).style.setProperty("--bs-primary-rgb", newVal + ", " + randGreen + ", " + randBlue); // 106, 177
 
 }, 50);
+
+// enable image modals
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});

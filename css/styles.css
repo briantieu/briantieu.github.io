@@ -1,11 +1,56 @@
 @charset "UTF-8";
 
-.project-image-vert > img {
+.color-on-hover {
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.color-on-hover:hover {
+  transform: scale(1.1);
+}
+
+/* ZOOM IMAGE ON HOVER */
+.image-box {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+i {
+  display: block;
+  transition: all 0.3s !important;
+  transition-timing-function: ease-out !important;
+}
+
+i:hover {
+  transform: scale(1.15, 0.85) !important;
+}
+
+.image-box img {
+  max-width: 100%;
+  transition: all 0.3s;
+  transition-timing-function: ease-out;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+}
+
+.image-box:hover img {
+  transform: scale(1.1);
+}
+
+/* PROJECT IMAGE SIZES */
+.project-image-vert img {
   max-height: 256px !important;
   width: auto !important;
 }
 
-.project-image-horiz > img {
+.project-image-horiz img {
   max-height: 128px !important;
   width: auto !important;
 }
