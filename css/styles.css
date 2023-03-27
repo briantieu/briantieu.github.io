@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-.project-image-vert {
-  max-height: 256px;
-  width: auto;
+.project-image-vert > img {
+  max-height: 256px !important;
+  width: auto !important;
 }
 
-.project-image-horiz {
-  max-height: 128px;
-  width: auto;
+.project-image-horiz > img {
+  max-height: 128px !important;
+  width: auto !important;
 }
 
 /* TOOL TIPS */
