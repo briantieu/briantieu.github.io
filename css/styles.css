@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-.project-image-vert img {
+.project-image-vert {
   max-height: 256px;
   width: auto;
 }
 
-.project-image-horiz img {
+.project-image-horiz {
   max-height: 128px;
   width: auto;
 }
