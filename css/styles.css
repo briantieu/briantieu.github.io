@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+.project-image-vert > img {
+  max-height: 256px;
+  width: auto;
+}
+
+.project-image-horiz > img {
+  max-height: 128px;
+  width: auto;
+}
+
 /* TOOL TIPS */
 
 /* Add this attribute to the element that needs a tooltip */
