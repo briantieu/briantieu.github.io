@@ -40,9 +40,9 @@ i:hover {
   transform: scale(1);
 }
 
-.image-box:hover img {
+/* .image-box:hover img {
   transform: scale(1.1);
-}
+} */
 
 /* PROJECT IMAGE SIZES */
 .project-image-vert img {
