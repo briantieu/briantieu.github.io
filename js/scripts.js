@@ -62,34 +62,34 @@ setInterval(() => {
 }, 50);
 
 // enable image modals
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-});
+// $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+//     event.preventDefault();
+//     $(this).ekkoLightbox();
+// });
 
-// init swiper
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
+// // init swiper
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+//     direction: 'vertical',
+//     loop: true,
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+//     // If we need pagination
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+//     // Navigation arrows
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+//     // And if we need scrollbar
+//     scrollbar: {
+//       el: '.swiper-scrollbar',
+//     },
 
-    autoplay: {
-        delay: 5000,
-    },
-  });
+//     autoplay: {
+//         delay: 5000,
+//     },
+//   });
